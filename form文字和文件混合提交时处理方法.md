@@ -36,3 +36,31 @@
 			}
 		}
 	}
+
+
+前台页面：
+
+    <form method="post" action="servlet/FileUploadDownload" enctype="multipart/form-data">
+   		上传说明：<input type="text" name="shuoming">
+   		请选择要上传的文件：<input type="file" name="file">
+   		<input type="submit" value="上传">
+   	</form>
+
+
+总结：拓展  
+**form表单提交数据方式为get和post两种，主要针对两种做以下总结：**  
+1.地址栏方面：  
+   get提交数据后，地址栏后面紧跟参数名称和参数值，中间用?来链接，参数多余两个往上的话，各参数之间用&链接  
+   post提交数据，数据是放在header内一起传送的，用户看不到全过程  
+2.安全性：    
+   get 提交的参数和数据在浏览器直接能看到，安全性不高  
+   post 数据看不到，相对较为安全  
+3.传输大小上  
+   get传输较小，一般不能大于2Kb  
+   post 传输量较大，一般被默认为不受限制 但理论上IIS4中最大值为80Kb，IIS5为100Kb  
+4.数据获取  
+  get 在服务器端用Request.QueryString获取变量的值
+  post 服务器端用Request.Form获取提交的数据（两种方式的参数都可以用Request来获得）
+
+
+  
