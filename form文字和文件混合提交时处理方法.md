@@ -47,8 +47,10 @@
    	</form>
 
 
-总结：拓展  
-**form表单提交数据方式为get和post两种，主要针对两种做以下总结：**  
+总结：拓展
+  
+**form表单提交数据方式为get和post两种，主要针对两种做以下总结：** 
+ 
 1.地址栏方面：  
    get提交数据后，地址栏后面紧跟参数名称和参数值，中间用?来链接，参数多余两个往上的话，各参数之间用&链接  
    post提交数据，数据是放在header内一起传送的，用户看不到全过程  
@@ -61,6 +63,12 @@
 4.数据获取  
   get 在服务器端用Request.QueryString获取变量的值
   post 服务器端用Request.Form获取提交的数据（两种方式的参数都可以用Request来获得）
+
+**form 表单enctype 参数说明**
+
+application/x-www-form-urlencoded:窗体数据被编码为名称/值对。这是标准的编码格式（默认）  
+multipart/form-data  不对字符编码。当使用有文件上传控件的表单时，该值是必需的  
+text/plain  将空格转换为 "+" 符号，但不编码特殊字符
 
 
   
