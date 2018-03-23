@@ -3,7 +3,7 @@
 **1. Linux操作平台** 以安装包（jdk1.6.0_45为例）
 ----------
 	1. 下载linux安装包
-		下载地址：[http://www.oracle.com/technetwork/java/archive-139210.html](http://www.oracle.com/technetwork/java/archive-139210.html "Oracle官网下载")
+		下载地址：http://www.oracle.com/technetwork/java/archive-139210.html
 	2. 解压安装包
 		1. 给文件添加可执行操作 chmod +x jdk-6u45-linux-X64.bin
 		2. 解压文件 ./jdk-6u45-linux-X64.bin
